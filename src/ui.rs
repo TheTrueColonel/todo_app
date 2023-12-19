@@ -69,11 +69,11 @@ fn ui_main(f: &mut Frame, app: &App) {
     let current_key_hint = {
         match app.current_screen {
             CurrentScreen::Main => Span::styled(
-                "\"q\" to quit | \"Enter\" to select/toggle completion | \"Up\"/\"Down\" move cursor",
+                "\"q\" to quit | \"d\" to delete | \"Enter\" to select/toggle completion | \"Up\"/\"Down\" move cursor",
                 Style::default().fg(Color::Red)
             ),
             CurrentScreen::Adding => Span::styled(
-                "\"ESC\" to exit",
+                "\"ESC\" to exit | \"Enter\" to submit",
                 Style::default().fg(Color::Red)
             ),
         }
